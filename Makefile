@@ -106,7 +106,7 @@ quiet=silent_
 override KBUILD_VERBOSE :=
 endif
 
-export quiet Q KBUILD_VERBOSE
+#export quiet Q KBUILD_VERBOSE
 
 # Call a source code checker (by default, "sparse") as part of the
 # C compilation.
@@ -125,7 +125,7 @@ ifndef KBUILD_CHECKSRC
   KBUILD_CHECKSRC = 0
 endif
 
-export KBUILD_CHECKSRC
+#export KBUILD_CHECKSRC
 
 # Enable "clippy" (a linter) as part of the Rust compilation.
 #
