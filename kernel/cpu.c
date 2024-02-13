@@ -64,9 +64,10 @@
  * @done_up:	Signal completion to the issuer of the task for cpu-up
  * @done_down:	Signal completion to the issuer of the task for cpu-down
  */
-struct cpuhp_cpu_state {
+#struct cpuhp_cpu_state {
 	enum cpuhp_state	state;
 	enum cpuhp_state	target;
+
 	enum cpuhp_state	fail;
 #ifdef CONFIG_SMP
 	struct task_struct	*thread;
